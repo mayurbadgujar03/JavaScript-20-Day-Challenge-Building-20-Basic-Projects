@@ -5,8 +5,8 @@ Each day, I will create a new project that covers various aspects of JavaScript,
 
 **Project List:**
 
-Day 1: Simple Calculator \n
-Day 2: Guess the Number Game
+Day 1: Simple Calculator <br>
+Day 2: Guess the Number Game <br>
 
 **Technologies Used:**
 
