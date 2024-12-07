@@ -1,0 +1,118 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #34495e;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 12px;
+    font-size: 1.2em;
+    margin: 10px 0;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 280px;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #2ecc71;
+    outline: none;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.4);
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    margin: 15px 0;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 280px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #2980b9;
+    transform: translateY(2px);
+}
+
+.output-section {
+    margin-top: 20px;
+}
+
+#output {
+    font-size: 1.4em;
+    color: #34495e;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#output:empty {
+    color: #bdc3c7;
+    font-style: italic;
+}
+
+/* Animation for the output area when result changes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#output {
+    animation: fadeIn 0.5s ease-out;
+}
