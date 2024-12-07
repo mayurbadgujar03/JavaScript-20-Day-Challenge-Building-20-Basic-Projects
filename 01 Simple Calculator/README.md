@@ -28,9 +28,9 @@ If you enter an invalid input, an error message will show, and the calculator wi
 Click the clear button to reset the calculator.
 
 ## **Technologies Used**
-HTML: For structuring the calculator layout.
-CSS: For styling the calculator and animations.
-JavaScript: For the logic behind the calculations and interactivity.
+- **HTML:** For structuring the calculator layout.
+- **CSS:** For styling the calculator and animations.
+- **JavaScript:** For the logic behind the calculations and interactivity.
 ## **Code Explanation**
 Here’s how the logic works:
 
