@@ -17,7 +17,7 @@ To get started, clone the repository to your local machine:
 git clone https://github.com/mayurbadgujar03/JavaScript-20-Day-Challenge-Building-20-Basic-Projects.git
 ```
 ### **Open the Project:**
-Navigate to the project directory and open the index.html file in your web browser.
+Navigate to the project directory and open the ```index.html``` file in your web browser.
 
 ### **Usage:**
 
