@@ -48,7 +48,8 @@ Enter 3 and 5, then click the + button. The result will be 8.
 Enter 10 and 0, then click the / button. A warning message will show: Cannot divide by zero^.
 
 ## **Preview**
-Here is a screenshot of how the calculator looks:
+Here is a screenshot of how the calculator looks: <br>
+![Calculator Screenshot](/calculator-screenshot.png)
 
 
 ## **License**
