@@ -10,6 +10,6 @@ Day 2: Guess the Number Game <br>
 
 **Technologies Used:**
 
-HTML
-CSS
-JavaScript
+HTML <br>
+CSS <br>
+JavaScript <br>
