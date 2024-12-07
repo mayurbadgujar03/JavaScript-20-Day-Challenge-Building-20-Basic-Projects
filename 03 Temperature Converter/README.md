@@ -50,5 +50,5 @@ Open the ```index.html``` file in your browser to start using the temperature co
 - Output: 25°C ❄️
 
 ## **Preview** 📸
-Here is a screenshot of how the game looks: <br>
+Here is a screenshot of how the temperature converter looks: <br>
 ![Temperature Converter Screenshot](./Temperature-Converter-screenshot.png)
