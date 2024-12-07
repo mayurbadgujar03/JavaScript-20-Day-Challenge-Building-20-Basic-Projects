@@ -51,6 +51,3 @@ Enter 10 and 0, then click the / button. A warning message will show: Cannot div
 Here is a screenshot of how the calculator looks: <br>
 ![Calculator Screenshot](./calculator-screenshot.png)
 
-
-## **License**
-This project is licensed under the MIT License - see the LICENSE file for details.
