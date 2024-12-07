@@ -16,7 +16,7 @@ To get started, clone the repository to your local machine:
 
 bash
 Copy code
-git clone https://github.com/your-username/simple-calculator.git
+```git clone https://github.com/your-username/simple-calculator.git```
 Open the Project:
 Navigate to the project directory and open the index.html file in your web browser.
 
