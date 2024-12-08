@@ -8,6 +8,7 @@ Each day, I will create a new project that covers various aspects of JavaScript,
 Day 1: Simple Calculator <br>
 Day 2: Guess the Number Game <br>
 Day 3: Temperature Converter<br>
+Day 4: To Do List<br />
 
 **Technologies Used:**
 
