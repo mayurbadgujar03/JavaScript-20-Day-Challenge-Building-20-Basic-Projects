@@ -1,0 +1,101 @@
+/* Reset some styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body and background styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; /* Dark background */
+    color: white; /* White text */
+    font-size: 18px;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    background-color: #1e1e1e; /* Slightly lighter dark background for container */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Header */
+h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Key Information */
+.key-info {
+    margin-top: 30px;
+}
+
+.key-info span {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffff00; /* Yellow text for the key/ keycode */
+}
+
+/* Virtual Keyboard Layout */
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Individual Keys */
+.key {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #333333; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid #444; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    color: white; 
+}
+
+/* Hover effect on keys */
+.key:hover {
+    background-color: #444444; 
+}
+
+.key.active {
+    background-color: #ffcc00; 
+    color: black; 
+    /* transform: scale(1.1);  */
+        transform: scale(1.2);
+        transition: transform 0.2s, background-color 0.2s;
+}
+
+.key:active {
+    background-color: #f5b300; 
+    transform: scale(0.95); 
+}
+
+.row .key:first-child {
+    margin-left: 0;
+}
+
+.row .key:last-child {
+    margin-right: 0;
+}
