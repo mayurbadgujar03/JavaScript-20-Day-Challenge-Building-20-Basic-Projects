@@ -9,6 +9,7 @@ Day 1: Simple Calculator <br>
 Day 2: Guess the Number Game <br>
 Day 3: Temperature Converter<br>
 Day 4: To Do List<br />
+Day 5: KeyPress Visualizer with Keyboard Layout<br />
 
 **Technologies Used:**
 
