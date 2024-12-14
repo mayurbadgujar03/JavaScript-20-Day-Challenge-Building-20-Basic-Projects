@@ -1,0 +1,214 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;  /* Light gray background */
+    color: #333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* Sidebar Section */
+.sidebar {
+    width: 300px;  /* Set the sidebar width */
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;  /* Border to separate sidebar from main body */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Add Student Container */
+.add-student-container {
+    background-color: #ffffff;  /* White background for the box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Shadow to give depth */
+}
+
+.add-student-container h2 {
+    font-size: 1.6rem;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.add-student-container input {
+    padding: 12px;
+    margin: 8px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #bdc3c7;
+    font-size: 1rem;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-student-container input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.add-student-container button {
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: none;
+    background-color: #e74c3c;  /* Red button */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-student-container button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Average Grade Container */
+.average-grade-container {
+    background-color: #ffffff;  /* White background for the box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.average-grade-container h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #34495e;
+}
+
+/* Main Body Section */
+.main-body {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;  /* White background */
+    overflow-y: auto;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Shadow for the table */
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    background-color: #f9f9f9;
+    color: #2C3E50;
+}
+
+td button {
+    padding: 6px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-btn {
+    background-color: #f39c12;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+td button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.edit-btn:hover {
+    background-color: #e67e22;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        border-right: none;
+    }
+
+    .main-body {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    td button {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-student-container input, .add-student-container button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .average-grade-container h3 {
+        font-size: 1rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+}

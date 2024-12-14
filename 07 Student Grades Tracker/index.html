@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="dashboard">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <!-- Add Student Container -->
+            <div class="container add-student-container">
+                <h2>Add Student</h2>
+                <input type="text" id="studentName" placeholder="Enter student's name">
+                <input type="number" id="studentGrade" placeholder="Enter student's grade">
+                <button id="addStudentBtn">Add Student</button>
+            </div>
+
+            <!-- Average Grade Container -->
+            <div class="container average-grade-container">
+                <h3>Average Grade: <span id="averageGrade">0</span></h3>
+            </div>
+        </aside>
+
+        <!-- Main Body Section (Student List) -->
+        <div class="main-body">
+            <div class="container view-students-container">
+                <h2>Student List</h2>
+                <table id="studentsTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Grade</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Student entries will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
