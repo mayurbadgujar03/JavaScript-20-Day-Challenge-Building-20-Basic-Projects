@@ -10,6 +10,8 @@ Day 2: Guess the Number Game <br>
 Day 3: Temperature Converter<br>
 Day 4: To Do List<br />
 Day 5: KeyPress Visualizer with Keyboard Layout<br />
+Day 6: Grocery List Manager(Pending)<br />
+Day 7: Student Grades Tracker<br />
 
 **Technologies Used:**
 
