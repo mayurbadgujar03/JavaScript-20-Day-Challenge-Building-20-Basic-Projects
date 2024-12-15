@@ -13,6 +13,7 @@ Day 5: KeyPress Visualizer with Keyboard Layout<br />
 Day 6: Grocery List Manager(Pending)<br />
 Day 7: Student Grades Tracker<br />
 Day 8: Recipe Manager App<br />
+Day 9: Weather App
 
 **Technologies Used:**
 
