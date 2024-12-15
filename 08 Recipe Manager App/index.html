@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Recipe Manager</h1>
+        </header>
+        <div class="main-content">
+            <section class="form-section">
+                <h2>Add New Recipe</h2>
+                <form id="recipe-form">
+                    <label for="recipe-name">Recipe Name:</label>
+                    <input type="text" id="recipe-name" name="recipe-name" required>
+    
+                    <label for="ingredients">Ingredients:</label>
+                    <div id="ingredients-container">
+                        <textarea class="ingredient" placeholder="Enter an ingredient" required></textarea>
+                    </div>
+                    <button type="button" id="add-ingredient" class="btn">Add More Ingredient</button>
+    
+                    <label for="instructions">Instructions:</label>
+                    <textarea id="instructions" name="instructions" required></textarea>
+    
+                    <button type="submit" class="btn" id="addRecipe">Add Recipe</button>
+                </form>
+            </section>
+    
+            <section class="recipes-section">
+                <h2>All Recipes</h2>
+                <ul id="recipes-list" class="recipe-list">
+                    <!-- Recipe items will be added here -->
+                </ul>
+            </section>
+        </div>
+    </div>
+    
+    <script src="./app.js">
+        
+    </script>
+</body>
+
+</html>

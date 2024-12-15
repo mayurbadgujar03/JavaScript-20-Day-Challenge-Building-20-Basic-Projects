@@ -1,0 +1,166 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+}
+
+/* Header */
+.app-header h1 {
+    text-align: center;
+    color: #FFEB3B; /* Yellow */
+    font-size: 36px;
+}
+
+/* Main content */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Form Section */
+.form-section {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%; /* Reduce width to fit side by side */
+}
+
+h2 {
+    color: #FFEB3B; /* Yellow */
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #CCCCCC;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #333333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/* Ingredients container */
+#ingredients-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#ingredients-container textarea {
+    margin-bottom: 10px;
+}
+
+/* Add Ingredient Button */
+#add-ingredient {
+    background-color: #FFEB3B;
+    color: #121212;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-ingredient:hover {
+    background-color: #FFC107;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+    background-color: #FFEB3B;
+    color: #121212;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #FFC107;
+}
+
+/* Recipe List Section */
+.recipes-section {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%; /* Reduce width to fit side by side */
+    overflow-y: auto; /* Allows scrolling if there are too many recipes */
+}
+
+.recipe-list {
+    list-style: none;
+}
+
+.recipe-item {
+    background-color: #333333;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.recipe-item h3 {
+    font-size: 20px;
+    color: #FFEB3B;
+}
+
+.recipe-item ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.recipe-item ul li {
+    font-size: 16px;
+    color: #CCCCCC;
+}
+
+.recipe-item .instructions {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.recipe-item .actions button {
+    background-color: #FFEB3B;
+    color: #121212;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.recipe-item .actions button:hover {
+    background-color: #FFC107;
+}
