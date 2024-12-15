@@ -31,12 +31,12 @@ This app connects you with real-time weather data from OpenWeather's API, provid
 
 1. Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/your-username/weather-app.git
+    git clone https://github.com/mayurbadgujar03/JavaScript-20-Day-Challenge-Building-20-Basic-Projects.git
     ```
 
 2. Navigate into the project directory:
     ```bash
-    cd weather-app
+    cd 09 Weather App
     ```
 
 3. Open `index.html` in your web browser, and voilà! You're ready to explore the weather 🌦️.
