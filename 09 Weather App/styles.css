@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Very dark background for a modern look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background: #1e1e1e; /* Slightly lighter black background for the container */
+  padding: 30px; /* Proper padding for spacing */
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Darker shadow for depth */
+}
+
+/* Heading */
+h1 {
+  color: #fff; /* White text for contrast */
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/* Search bar */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+#cityInput {
+  padding: 12px;
+  width: 250px;
+  border: 1px solid #444; /* Dark border */
+  border-radius: 6px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333; /* Darker input background */
+  margin-bottom: 5px;
+}
+
+#searchBtn {
+  padding: 12px 18px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  
+}
+
+#searchBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Loading message */
+#loading {
+  display: none;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* Weather card */
+.weather-card {
+  background: #1f1f1f; /* Slightly lighter dark background for the card */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Darker shadow for more depth */
+}
+
+.weather-card h2 {
+  color: #fff; /* White text for the weather title */
+  font-size: 24px;
+  margin: 12px 0;
+  font-weight: 400;
+}
+
+.weather-card #weatherDescription {
+  color: #bbb; /* Lighter gray for descriptions */
+  font-size: 16px;
+  margin: 8px 0;
+  font-weight: 300; /* Lighter weight for description */
+}
+
+.weather-card #temperature {
+  color: #fff; /* White for temperature text */
+  font-size: 28px; /* Larger font for emphasis */
+  margin: 12px 0;
+  font-weight: 600;
+}
+
+.weather-card img {
+  width: 80px;
+  margin-top: 15px;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 400px) {
+  .app-container {
+      padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  h1 {
+      font-size: 24px; /* Slightly smaller font for headings */
+  }
+
+  #cityInput {
+      width: 100%; /* Make the input field take full width on smaller screens */
+  }
+}
