@@ -43,7 +43,7 @@ Simply open the `index.html` file in your browser to start using the GitHub User
 Now, you can search for any GitHub user by entering their username and exploring their profile! 🙌
 
 ## Demo 🎥
-[Watch the demo srceenshot here!]([./GitHubUserFinder.png])
+![GitHub User Finder Screenshot](./GitHubUserFinder.png)
 ---
 
 ## Thank you for using **GitHub User Finder**! 🌟  
