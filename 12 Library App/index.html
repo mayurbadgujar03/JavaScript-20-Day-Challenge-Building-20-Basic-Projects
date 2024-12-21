@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library App</h1>
+    </header>
+
+    <main>
+        <section id="add-book-section">
+            <h2>Add a New Book</h2>
+            <form id="add-book-form">
+                <input type="text" id="book-title" placeholder="Book Title" required>
+                <input type="text" id="book-author" placeholder="Author" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+
+        <section id="book-list-section">
+            <h2>Book List</h2>
+            <ul id="book-list">
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Library App</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
