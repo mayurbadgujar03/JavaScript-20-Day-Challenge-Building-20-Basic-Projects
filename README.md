@@ -17,6 +17,8 @@ Day 9: Weather App<br />
 Day 10: GitHub User Finder<br/>
 Day 11: Form Validator<br/>
 Day 12: Library App<br / >
+Day 13: Multi-Page Portfolio Website<br />
+Day 14: Notes App<br />
 
 **Technologies Used:**
 
