@@ -59,9 +59,9 @@ To get started with the **Notes App**, follow these steps:
 3. **Open the ```index.html``` file in your browser:** Simply double-click the file, and voilà! You can start adding, deleting, and organizing your notes. 🖥️✨
 
 ## 📸 **Preview** 👀
-Here’s a sneak peek of what you’ll see when you open the app:
-![App Screenshot](./1.png)
-![App Screenshot](./2.png)
+Here’s a sneak peek of what you’ll see when you open the app:<br />
+![App Screenshot](./1.png)<br />
+![App Screenshot](./2.png)<br />
 
 ## **💖 Why This App? 🧐**
 We all need a space to capture fleeting thoughts, task lists, or creative ideas. Notes App was designed to be simple yet powerful—something that’s always ready, always there, and always intuitive. You can use it for anything—whether you’re writing down a shopping list, outlining a blog post, or creating a to-do list to conquer your day. 📅
