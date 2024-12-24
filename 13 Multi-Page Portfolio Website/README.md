@@ -81,7 +81,7 @@ Ready to start learning? Here's how you can get the project running on your loca
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/learning-js-modules.git
+   git clone https://github.com/mayurbadgujar03/JavaScript-20-Day-Challenge-Building-20-Basic-Projects.git
     ```
 2. **Navigate to the project directory:**
   ```bash
