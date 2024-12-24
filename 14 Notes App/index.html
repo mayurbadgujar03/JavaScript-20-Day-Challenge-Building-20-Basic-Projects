@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes App</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./logo.jpg" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Notes</h1>
+    </header>
+
+    <div class="container">
+        <form id="note-form" class="note-form">
+            <input type="text" id="note-title" placeholder="Enter title" required>
+            <textarea id="note-content" placeholder="Write your note..." required></textarea>
+            <button type="submit" class="add-note-btn">Save Note</button>
+            <a href="#" id="clear-all" class="clear-all">Clear All Notes</a>
+        </form>
+
+        <ul id="notes-list" class="notes-list">
+            <!-- Notes will be dynamically loaded here -->
+        </ul>
+    </div>
+
+    <footer>
+        <p>Powered by JavaScript</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
