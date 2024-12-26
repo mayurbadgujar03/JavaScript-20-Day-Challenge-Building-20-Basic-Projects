@@ -1,8 +1,8 @@
-# ⏳ **16 Countdown Timer** ⏳
+# ⏳ **Countdown Timer** ⏳
 
 ## 🕰️ **The Countdown Begins!** 🎉
 
-Time is an unyielding force. Every moment is precious, especially when you're counting down to something important. Whether it's a milestone event, a deadline, or just the excitement of an upcoming occasion, the **16 Countdown Timer** is here to help you make the most of every second.
+Time is an unyielding force. Every moment is precious, especially when you're counting down to something important. Whether it's a milestone event, a deadline, or just the excitement of an upcoming occasion, the **Countdown Timer** is here to help you make the most of every second.
 
 Imagine you’re preparing for your best friend’s birthday or eagerly awaiting the release of a new game. The countdown is ticking down, and every second that passes is one step closer to the big moment. This simple yet powerful tool keeps track of time for you, updating in real-time and ensuring you never miss that special moment.
 
