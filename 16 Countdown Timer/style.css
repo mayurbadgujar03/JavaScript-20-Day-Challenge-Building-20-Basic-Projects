@@ -1,0 +1,123 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Timer container */
+.timer {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Input Section */
+.input-section {
+    margin-bottom: 30px;
+}
+
+.input-field {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.reset-button {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background-color: #555;
+}
+
+/* Countdown display */
+.countdown-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Time units */
+.time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.countdown {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Expiry message */
+#msg {
+    font-size: 1.5em;
+    color: red;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .countdown-display {
+        flex-direction: column;
+    }
+
+    .time-unit {
+        margin: 20px 0;
+    }
+
+    .input-field {
+        max-width: 100%;
+    }
+
+    .reset-button {
+        max-width: 100%;
+    }
+}
