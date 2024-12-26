@@ -19,6 +19,8 @@ Day 11: Form Validator<br/>
 Day 12: Library App<br / >
 Day 13: Multi-Page Portfolio Website<br />
 Day 14: Notes App<br />
+Day 15: Password Strength Checker<br />
+Day 16: Countdown Timer<br />
 
 **Technologies Used:**
 
