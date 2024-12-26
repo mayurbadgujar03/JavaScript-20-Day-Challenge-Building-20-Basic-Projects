@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="./logo.jpg" alt="Logo" class="logo">
+            <h1 class="brand-name">SecurePass</h1>
+        </div>
+    </header>
+
+    <!-- Main Body Section -->
+    <main>
+        <div class="container">
+            <h2>Password Strength Checker</h2>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Enter your password">
+                <span class="eye-icon" id="eye-icon" onclick="togglePasswordVisibility()">👁️</span>
+            </div>
+            <div class="strength-meter">
+                <div class="meter" id="meter-weak"></div>
+                <div class="meter" id="meter-medium"></div>
+                <div class="meter" id="meter-strong"></div>
+            </div>
+            <p id="password-strength"></p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 SecurePass. All rights reserved.</p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
