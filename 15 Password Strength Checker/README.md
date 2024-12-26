@@ -33,7 +33,7 @@ As you type, the strength meter shows you exactly how your password is doing. If
 ### 1. **Full Screen View**  
 This is where all the magic happens! Enter your password and see the feedback in real-time. 🔍
 
-![Full Screen](fullSrceen.png)
+![Full Screen](fullScreen.png)
 
 ### 2. **Weak Password**  
 If your password doesn't meet the minimum requirements, you'll see a warning! ⚠️
