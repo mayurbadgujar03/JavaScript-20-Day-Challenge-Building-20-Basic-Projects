@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Loop Visualization</title>
+  <style>
+    /* Basic Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    #call-stack-items, #web-api-items, #task-items, #microtask-items {
+      list-style-type: none;
+      padding: 10px;
+      margin: 20px;
+      border: 1px solid #ccc;
+      width: 300px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    li {
+      padding: 5px;
+      background-color: #e4e4e4;
+      margin: 5px 0;
+      border-radius: 3px;
+    }
+
+    li.waiting {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Event Loop Visualization</h1>
+  
+  <div>
+    <h3>Call Stack</h3>
+    <ul id="call-stack-items"></ul>
+  </div>
+
+  <div>
+    <h3>Web API</h3>
+    <ul id="web-api-items"></ul>
+  </div>
+
+  <div>
+    <h3>Task Queue</h3>
+    <ul id="task-items"></ul>
+  </div>
+
+  <div>
+    <h3>Microtask Queue</h3>
+    <ul id="microtask-items"></ul>
+  </div>
+
+  <script>
+    const callStack = document.getElementById('call-stack-items');
+    const webApi = document.getElementById('web-api-items');
+    const taskQueue = document.getElementById('task-items');
+    const microtaskQueue = document.getElementById('microtask-items');
+
+    function addToCallStack(functionName) {
+      const li = document.createElement('li');
+      li.textContent = functionName;
+      callStack.appendChild(li);
+      
+      setTimeout(() => {
+        li.remove();
+      }, 4000);  
+    }
+
+    function simulateWebApi(callbackName, delay) {
+      const li = document.createElement('li');
+      li.textContent = `${callbackName} (waiting)`;
+      li.classList.add('waiting');
+      webApi.appendChild(li);
+
+      setTimeout(() => {
+        li.remove();
+        addToTaskQueue(callbackName);
+      }, delay);
+    }
+
+    function addToTaskQueue(callbackName) {
+      const li = document.createElement('li');
+      li.textContent = callbackName;
+      taskQueue.appendChild(li);
+      
+      setTimeout(() => {
+        li.remove();
+        addToCallStack(callbackName);
+      }, 6000);  
+    }
+
+    function addToMicrotaskQueue(callbackName) {
+      const li = document.createElement('li');
+      li.textContent = callbackName;
+      microtaskQueue.appendChild(li);
+      
+      setTimeout(() => {
+        li.remove();
+        addToCallStack(callbackName);
+      }, 5000);  
+    }
+
+    addToCallStack('main()');
+    simulateWebApi('setTimeout', 3000); 
+    addToMicrotaskQueue('Promise.then');  
+  </script>
+
+</body>
+</html>
