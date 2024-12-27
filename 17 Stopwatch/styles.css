@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f4f9; /* Light background for light mode */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s ease; /* Smooth transition for light/dark mode */
+}
+
+.stopwatch-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.display-area {
+  font-size: 70px; /* Big and bold font for the timer */
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  color: #333;
+  border-radius: 50%; /* Make it circular */
+  padding: 20px 50px;
+  background-color: #f1f1f1; /* Light background color for the timer */
+  width: 250px; /* Match the width for circular shape */
+  height: 250px; /* Match the height for circular shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  border: 4px solid #ccc; /* Thin border */
+}
+
+#hours, #minutes, #seconds, #counts {
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px; /* Rounded buttons */
+  background-color: #4CAF50; /* Default green button color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease-in-out;
+  width: 100px;
+}
+
+button#reset {
+  background-color: #ccc; /* Default grey for reset button */
+}
+
+button:hover {
+  background-color: #45a049; /* Slightly darker green on hover for the start/stop button */
+}
+
+button#reset:hover {
+  background-color: #d34343; /* Red for reset button hover */
+}
+
+button:active {
+  transform: scale(0.98); /* Slight press effect */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Light/Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1c1c1c; /* Dark background for dark mode */
+  }
+
+  .stopwatch-container {
+    background-color: #2c2c2c; /* Darker container background */
+  }
+
+  .display-area {
+    background-color: #333; /* Dark background for the timer */
+    border: 4px solid #444; /* Dark border for the timer */
+    color: #fff; /* White text for the timer */
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  button#reset {
+    background-color: #aaa; /* Grey reset button in dark mode */
+  }
+
+  button:hover {
+    background-color: #32b838; /* Slightly lighter green on hover in dark mode */
+  }
+
+  button#reset:hover {
+    background-color: #9a3e3e; /* Darker red for reset hover in dark mode */
+  }
+}
