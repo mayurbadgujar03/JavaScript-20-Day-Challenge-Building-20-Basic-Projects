@@ -31,7 +31,8 @@ Despite these hurdles, we prevailed, and **Shape Drawer** came to life, fully fu
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/shapedrawer.git ```
+   git clone https://github.com/mayurbadgujar03/JavaScript-20-Day-Challenge-Building-20-Basic-Projects.git
+   ```
 2. Open ```index.html``` in your browser.
 3. Enjoy drawing shapes! 🎉
 
