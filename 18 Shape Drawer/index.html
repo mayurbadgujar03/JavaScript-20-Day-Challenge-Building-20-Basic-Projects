@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Drawer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column; /* Adjusting layout direction */
+        }
+
+        #toolbar {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        #toolbar label {
+            font-weight: 600;
+            color: #333;
+            margin-right: 10px;
+        }
+
+        #toolbar select,
+        #toolbar input {
+            font-size: 14px;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+            transition: all 0.2s ease;
+        }
+
+        #toolbar select:focus,
+        #toolbar input:focus {
+            outline: none;
+            border-color: #5f6368;
+            background-color: #ffffff;
+        }
+
+        canvas {
+            margin-top: 100px; 
+            border-radius: 10px;
+            border: 3px solid #555;
+            background-color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: crosshair;
+            width: 500px; 
+            height: 500px; 
+            background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+        }
+
+        #shape, #color, #size {
+            min-width: 120px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #toolbar {
+                padding: 10px;
+                flex-direction: column;
+            }
+
+            #shape, #color, #size {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="toolbar">
+        <label for="shape">Shape:</label>
+        <select id="shape">
+            <option value="circle">Circle</option>
+            <option value="square">Square</option>
+            <option value="triangle">Triangle</option>
+        </select>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" value="#000000">
+
+        <label for="size">Size:</label>
+        <input type="number" id="size" value="50" min="10" max="200">
+    </div>
+
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
