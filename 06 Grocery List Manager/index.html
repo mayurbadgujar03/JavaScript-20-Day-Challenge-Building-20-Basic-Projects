@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery List Manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FAFAFA;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #FF4081; /* Vibrant pink */
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      border-bottom: 2px solid #F50057; /* Complementary shade for header */
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .grocery-list {
+      margin-top: 1.5rem;
+      padding: 0;
+      list-style-type: none;
+    }
+    .grocery-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 8px;
+      background-color: #FFF9C4; /* Light yellow for items */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    .grocery-item:hover {
+      transform: translateY(-5px);
+    }
+    .grocery-item span {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .grocery-item button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .grocery-item button:hover {
+      background-color: #388E3C;
+    }
+    .add-item-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem;
+      gap: 1rem;
+    }
+    .add-item-section input, .add-item-section select {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #E0E0E0;
+      width: 45%;
+      transition: border-color 0.3s ease;
+    }
+    .add-item-section input:focus, .add-item-section select:focus {
+      border-color: #FF4081; /* Highlight border on focus */
+      outline: none;
+    }
+    .add-item-section button {
+      background-color: #FF4081;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .add-item-section button:hover {
+      background-color: #F50057; /* Slightly darker shade on hover */
+    }
+    .filter-section {
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .filter-section select, .filter-section input {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #E0E0E0;
+      width: 48%;
+      transition: border-color 0.3s ease;
+    }
+    .filter-section input:focus, .filter-section select:focus {
+      border-color: #FF4081;
+      outline: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777777;
+      margin-top: 2rem;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Grocery List Manager
+  </header>
+
+  <div class="container">
+    <!-- Filter Section -->
+    <div class="filter-section">
+      <select id="filter-section">
+        <option value="all">All Categories</option>
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="dairy">Dairy</option>
+      </select>
+      <input type="text" id="searchByName" placeholder="Search by name...">
+    </div>
+
+    <!-- Grocery List -->
+    <ul class="grocery-list" id="grocery-list">
+      <!-- Dynamic items will be added here -->
+    </ul>
+
+    <!-- Add Item Section -->
+    <div class="add-item-section">
+      <input type="text" placeholder="Add new item..." id="new-item-name">
+      <select id="inputOpt">
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="dairy">Dairy</option>
+      </select>
+      <button id="addBTN">Add Item</button>
+    </div>
+  </div>
+
+  <footer>
+    Grocery List Manager | Version 1.0 | Created by Mayur
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
