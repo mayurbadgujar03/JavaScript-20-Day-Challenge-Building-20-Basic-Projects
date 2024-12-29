@@ -57,40 +57,26 @@
         const messagesGet = document.getElementById("messages");
         const socket = io();
 
-        // Function to add a new message to the chat box
         function addMessage(message, timestamp) {
             const messageDiv = document.createElement("div");
             messageDiv.classList.add("message-item");
             messageDiv.innerHTML = `${message} <div class="timestamp">${timestamp}</div>`;
             messagesGet.appendChild(messageDiv);
 
-            // Scroll to the bottom to show the latest message
             messagesGet.scrollTop = messagesGet.scrollHeight;
         }
-
-        // Listen for messages from the server
         socket.on("message", (data) => {
             addMessage(data.text, data.timestamp);
         });
-
-        // Send message when the button is clicked
         sendBtn.addEventListener("click", () => {
             const message = messageInput.value.trim();
-
-            // Prevent sending empty messages
             if (message === "") {
                 alert("Please enter a message.");
                 return;
             }
-
-            // Emit message to the server
             socket.emit('user-message', message);
-
-            // Clear the input field after sending
             messageInput.value = "";
         });
-
-        // Allow sending messages by pressing the 'Enter' key
         messageInput.addEventListener("keydown", (event) => {
             if (event.key === "Enter") {
                 sendBtn.click();
